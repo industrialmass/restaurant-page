@@ -107,6 +107,7 @@ h1 {
 }
 
 .navbar__item:hover {
+  cursor: pointer;
   transform: scale(1.2);
   animation-name: hover;
   animation-duration: 0.5s;
