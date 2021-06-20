@@ -1,0 +1,123 @@
+:root {
+  color: white;
+  background-image: url(../images/restaurant.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.384);
+  width: 100%;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2rem, 8vw, 5rem);
+  margin: 5px 0;
+}
+
+.box {
+  margin-top: 100px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.671);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 810px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu-item {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+.menu-item:hover {
+  background-color: rgba(250, 249, 249, 0.404);
+}
+
+.navbar {
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__list {
+  padding-left: 10px;
+  min-width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__list--emphasis {
+  border-bottom: 2px solid white;
+}
+
+.navbar__item {
+  height: 100%;
+  font-size: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item:hover {
+  transform: scale(1.2);
+  animation-name: hover;
+  animation-duration: 0.5s;
+}
+
+@keyframes hover {
+  from {
+    transform: scale(1);
+    text-decoration: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
