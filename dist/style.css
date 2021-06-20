@@ -1,6 +1,6 @@
 :root {
   color: white;
-  background-image: url(../images/restaurant.jpg);
+  background-image: url(./images/restaurant.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

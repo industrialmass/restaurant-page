@@ -7,10 +7,10 @@ const contact = (() => {
   phone.textContent = "619 - 666 - 5432";
   email.textContent = "mondales@gmail.com";
   const image = document.createElement("img");
-  image.setAttribute("src", "../images/map-large.png");
+  image.setAttribute("src", "./images/map-large.png");
   image.setAttribute(
     "srcset",
-    "../images/map-verysmall.png 210w, ../images/map-small.png 369w, ../images/map-medium.png 535w, ../images/map-large.png 969w"
+    "./images/map-verysmall.png 210w, ./images/map-small.png 369w, ./images/map-medium.png 535w, ./images/map-large.png 969w"
   );
   image.setAttribute(
     "sizes",

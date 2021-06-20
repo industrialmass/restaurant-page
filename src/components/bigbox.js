@@ -6,7 +6,7 @@ const bigbox = (page) => {
   section.id = "main";
   if (page === "Home") {
     const image = document.createElement("img");
-    image.setAttribute("src", "../../images/chef.png");
+    image.setAttribute("src", "./images/chef.png");
     section.appendChild(makeText("San Diego's favorite restaurant"));
     section.appendChild(makeText("Serving the community since 1994"));
     section.appendChild(image);
